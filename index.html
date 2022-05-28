@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ichat</title>
+        <script defer src="http://localhost:8000/socket.io/socket.io.js">
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+        <style>
+            body{
+                background-image: linear-gradient(rgb(255, 255, 255),rgb(212, 201, 201));
+                height: 100vh;
+            }
+            .container{
+                max-width: 955px;
+                /* background-color: red; */
+                margin:auto;
+                height: 60vh;
+                border: solid 2px black;
+                color:white;
+                overflow-y:auto;
+            }
+            .message{
+                background-color: rgb(66, 66, 31);
+                width:24%;
+                margin:10px;
+                height: 30px;
+                border-radius: 8px;
+                padding: 7px;
+            }
+            .right
+            {
+                float: right;
+                clear: both;
+            }
+            .left
+            {
+                float: left;
+                clear: both;
+            }
+            #send-container{
+                margin: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            input[type="text"]{
+                width: 90%;
+                height: 20px;
+            }
+            .btn
+            {
+                cursor: pointer;
+                border:2px solid white;
+                border-radius:6px;
+            }
+        </style>
+        
+        <script defer src="client.js"></script>
+    </head>
+    <body>
+
+            <div class="container">
+                <div class="message right">kailash:hello</div>
+                <div class="message left">hariom:hi</div>
+            </div>
+
+            <div class="send">
+                <form action="#" id="send-container">
+                    <input type="text" name="messageinp" id="messageinp" value="">
+                    <button class="btn" type="submit">send</button>
+                </form>
+            </div>
+
+
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
